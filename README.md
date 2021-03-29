@@ -3,6 +3,7 @@ This is the step by step instructions for our project
 
 Contents
 * [Setup](#setup)
+* [Label Nodes](#label_nodes)
 
 ## Setup 
 Instructions for installing hope and setting up the environment for use
@@ -24,6 +25,61 @@ Instructions for installing hope and setting up the environment for use
 * You know have a .7z folder with all the benchmark circuits you need, extract to your project directory
  * Note: You must have 7-zip to extract files from the zipped folder
 
+## Label Nodes
+In order to implement Logic Encryption we must label all the nodes and perform fault analysis on each. The HOPE software does most of the work for us. The following is an explanation for the labeling of nodes in ISCAS85 circuits
 
+### ISCAS85 Netlist Formats
+The ISCAS85 benchmarking circuits are given to us in a number of file formats:
+* bench
+* blif
+* cir
+* isc
+* PLA
+* Verilog
+The hope software uses the bench files, Vivado uses Verilog files, and LTSPICE uses cir files. Each file type is a subdirectory in the ISCAS folder
 
+#### .bench files
+The .bench contains a netlist describing the design of the benchmarking circuit. 
+
+The format is a lot different than VHDL or Verilog. With # signifying a comment and each line defining the output and inputs of Gates. 
+
+For Example:
+```
+EXAMPLE: ISCAS89 NETLIST FORMAT (s27.bench)
+--------------------------------------------------------------------
+# s27
+# 4 inputs
+# 1 outputs
+# 3 D-type flipflops
+# 2 inverters
+# 8 gates (1 ANDs + 1 NANDs + 2 ORs + 4 NORs)
+
+INPUT(G0)
+INPUT(G1)
+INPUT(G2)
+INPUT(G3)
+
+OUTPUT(G17)
+
+G5 = DFF(G10)
+G6 = DFF(G11)
+G7 = DFF(G13)
+
+G14 = NOT(G0)
+G17 = NOT(G11)
+
+G8 = AND(G14, G6)
+
+G15 = OR(G12, G8)
+G16 = OR(G3, G8)
+
+G9 = NAND(G16, G15)
+
+G10 = NOR(G14, G11)
+G11 = NOR(G5, G9)
+G12 = NOR(G1, G7)
+G13 = NOR(G2, G12)
+-------------------------------------------------------------------
+```
+As you can see the nodes are `G0 - G11` and are connected by assigning outputs as variables, gates as functions, and inputs as arguments.
 
