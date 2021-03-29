@@ -3,7 +3,7 @@ This is the step by step instructions for our project
 
 Contents
 * [Setup](#setup)
-* [Label Nodes](#label)
+* [Label Nodes](#label-nodes)
 
 ## Setup 
 Instructions for installing hope and setting up the environment for use
