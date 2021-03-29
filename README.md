@@ -83,3 +83,15 @@ G13 = NOR(G2, G12)
 ```
 As you can see the nodes are `G0 - G11` and are connected by assigning outputs as variables, gates as functions, and inputs as arguments.
 
+#### Verilog Files
+These files can be added as sources in a Vivado project make sure you also add the `lib.v` and `DFF2.v` files as design sources or your circuit will not compile.
+
+### Schematic in Vivado
+We can examine the nodes and their labels by viewing the schematic of our benchmarking circuits. The following is steps for examining the nodes of the s27 circuit.
+
+* Open Vivado and start a new Project
+* Select `s27.v`,`lib.v`, and `DFF2.v` as design sources
+* Flow Navigator->RTL Analysis->Open Elaborated Design->Schematic
+* In the Schematic window select the link at the top that says `18 Nets`
+* This will pull up a window listing all of the nodes in the design
+* clicking on a node's name will highlight it in the schematic
