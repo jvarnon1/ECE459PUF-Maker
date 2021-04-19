@@ -1,0 +1,129 @@
+test    1: 11001 11
+  G22gat /1: 11
+  G10gat /1: 11
+  G22gat /0: * 01
+  G16gat->G22gat /1: * 01
+  G3gat->G10gat /1: 11
+  G1gat /1: 11
+  G3gat /0: 11
+  G3gat /1: 11
+  G16gat /1: * 01
+  G16gat /0: 11
+  G11gat->G16gat /1: 11
+  G2gat /1: 11
+  G11gat /0: * 00
+  G3gat->G11gat /1: 11
+  G11gat /1: 11
+  G6gat /1: 11
+  G23gat /1: 11
+  G19gat /1: 11
+  G23gat /0: * 10
+  G16gat->G23gat /1: 11
+  G11gat->G19gat /1: 11
+  G7gat /1: 11
+test    2: 00001 01
+  G22gat /1: * 11
+  G10gat /1: 01
+  G3gat->G10gat /1: 01
+  G1gat /1: 01
+  G3gat /0: 01
+  G3gat /1: 01
+  G16gat /0: * 11
+  G11gat->G16gat /1: 01
+  G2gat /1: * 11
+  G3gat->G11gat /1: 01
+  G11gat /1: 01
+  G6gat /1: 01
+  G23gat /1: 01
+  G19gat /1: * 00
+  G16gat->G23gat /1: 01
+  G11gat->G19gat /1: 01
+  G7gat /1: 01
+test    3: 10110 10
+  G10gat /1: * 00
+  G3gat->G10gat /1: 10
+  G1gat /1: 10
+  G3gat /0: * 00
+  G3gat /1: 10
+  G11gat->G16gat /1: 10
+  G3gat->G11gat /1: 10
+  G11gat /1: 10
+  G6gat /1: 10
+  G23gat /1: * 11
+  G16gat->G23gat /1: 10
+  G11gat->G19gat /1: 10
+  G7gat /1: 10
+test    4: 10001 01
+  G3gat->G10gat /1: * 11
+  G1gat /1: 01
+  G3gat /1: * 11
+  G11gat->G16gat /1: 01
+  G3gat->G11gat /1: 01
+  G11gat /1: 01
+  G6gat /1: 01
+  G16gat->G23gat /1: 01
+  G11gat->G19gat /1: 01
+  G7gat /1: 01
+test    5: 11011 11
+  G1gat /1: 11
+  G11gat->G16gat /1: 11
+  G3gat->G11gat /1: * 00
+  G11gat /1: 11
+  G6gat /1: 11
+  G16gat->G23gat /1: 11
+  G11gat->G19gat /1: 11
+  G7gat /1: 11
+test    6: 01110 00
+  G1gat /1: * 10
+  G11gat->G16gat /1: * 11
+  G11gat /1: * 11
+  G6gat /1: 00
+  G16gat->G23gat /1: 00
+  G11gat->G19gat /1: 00
+  G7gat /1: 00
+test    7: 00000 00
+  G6gat /1: 00
+  G16gat->G23gat /1: 00
+  G11gat->G19gat /1: 00
+  G7gat /1: * 01
+test    8: 11101 11
+  G6gat /1: * 10
+  G16gat->G23gat /1: 11
+  G11gat->G19gat /1: 11
+test    9: 01100 11
+  G16gat->G23gat /1: * 10
+  G11gat->G19gat /1: 11
+test   10: 01011 11
+  G11gat->G19gat /1: 11
+test   11: 11110 10
+  G11gat->G19gat /1: 10
+test   12: 11110 10
+  G11gat->G19gat /1: 10
+test   13: 11011 11
+  G11gat->G19gat /1: 11
+test   14: 01001 11
+  G11gat->G19gat /1: 11
+test   15: 11001 11
+  G11gat->G19gat /1: 11
+test   16: 10101 11
+  G11gat->G19gat /1: 11
+test   17: 00110 00
+  G11gat->G19gat /1: 00
+test   18: 01000 11
+  G11gat->G19gat /1: 11
+test   19: 10001 01
+  G11gat->G19gat /1: 01
+test   20: 11111 10
+  G11gat->G19gat /1: * 11
+test   21: 01001 11
+test   22: 10011 01
+test   23: 00000 00
+test   24: 00111 00
+test   25: 11110 10
+test   26: 00101 01
+test   27: 00111 00
+test   28: 10100 10
+test   29: 00111 00
+test   30: 00011 01
+test   31: 10100 10
+test   32: 11110 10
