@@ -25,7 +25,7 @@ def fault_impact(file):
     name_list = []
     for l in file: #each line in the file
         line = l.split() #split up the words on the line
-        if line[0].startswith("G"): #gates start with G
+        if line[0].startswith("N") | line[0].startswith("L"): #gates start with N or L
             # Get the gate's name
             name = line[0]
             if name not in name_list:
@@ -57,7 +57,7 @@ def fault_impact(file):
         elif line[0] == "test": #get the output of the test
             output = int(line[len(line)-1], 2)  #the lest element in the line is the output
         else:
-            print("Error: unrecognized file line:\n \t %s\n", l)
+            print("Error: unrecognized file line:\n \t ", l,"\n")
     return gate_list
 
 #create a pandas dataframe from list of gate objects
