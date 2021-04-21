@@ -64,18 +64,20 @@ def fault_impact(file):
 def fault_impact_pandas(impact_list):
     gates = []
     fault_impact = []
-    cname = circuit_name
     for g in impact_list:
         gates.append(g.name)
         fault_impact.append(g.fault_impact)
-    data_frame = pd.DataFrame(list(zip(gates, fault_impact)), columns = ['Gate', 'Fault Impact'])
-    return data_frame
+    df = pd.DataFrame(list(zip(gates, fault_impact)), columns = ['Gate', 'Fault Impact'])
+    #Sort by Fault impact
+    df = df.sort_values(by=['Fault Impact'], ascending=False, ignore_index=True)
+    return df
 
 #calculate Fault impact of c17
 f = open("c17.fault", "r")
 gates = fault_impact(f)
 f.close()
-fault_impact_pandas(gates)
+fault_impact = fault_impact_pandas(gates)
+print(fault_impact)
         
 
 
