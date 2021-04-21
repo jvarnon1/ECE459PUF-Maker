@@ -1,5 +1,5 @@
 # Fault Impact Analysis
-
+import pandas as pd
 # Make a class for info on a gate
 class gate:
     def __init__(self, name):
@@ -60,16 +60,22 @@ def fault_impact(file):
             print("Error: unrecognized file line:\n \t %s\n", l)
     return gate_list
 
+#create a pandas dataframe from list of gate objects
+def fault_impact_pandas(impact_list):
+    gates = []
+    fault_impact = []
+    cname = circuit_name
+    for g in impact_list:
+        gates.append(g.name)
+        fault_impact.append(g.fault_impact)
+    data_frame = pd.DataFrame(list(zip(gates, fault_impact)), columns = ['Gate', 'Fault Impact'])
+    return data_frame
 
 #calculate Fault impact of c17
 f = open("c17.fault", "r")
 gates = fault_impact(f)
 f.close()
-# print gate names with fault impact
-print("Gate: \t fault impact \n")
-for g in gates:
-    print(g.name, g.fault_impact, "\n")
-
+fault_impact_pandas(gates)
         
 
 
