@@ -62,7 +62,10 @@ for l in f: #each line in the file
         print("Error: unrecognized file line:\n \t %s\n", l)
 f.close()
 
-
+# print gate names with fault impact
+print("Gate: \t fault impact \n")
+for g in gate_list:
+    print(g.name, g.fault_impact, "\n")
 
         
 
