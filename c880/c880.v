@@ -263,8 +263,8 @@ output L388gat, L389gat, L390gat, L391gat, L418gat, L419gat, L420gat, L421gat,
    IN1 U233 ( L597gat, L670gat ); 
    AND2 U234 ( L600gat, L597gat, L673gat ); 
    NO2 U235 ( L605gat, L523gat, L677gat ); 
-   IN1 U236 ( X5, L678gat ); 
-   AND2 U237 ( L609gat, X5, L682gat ); 
+   IN1 U236 ( N2, L678gat ); 
+   AND2 U237 ( L609gat, N2, L682gat ); 
    NO2 U238 ( L615gat, L524gat, L686gat ); 
    IN1 U239 ( L616gat, L687gat ); 
    AND2 U240 ( L619gat, L616gat, L692gat ); 
@@ -413,12 +413,14 @@ output L388gat, L389gat, L390gat, L391gat, L418gat, L419gat, L420gat, L421gat,
    BU1 U383 ( L877gat, L880gat );
    XOR2 U384 ( L210gat, K1, X1 );
    XOR2 U385 ( L177gat, K2, X2 );
-   XOR2 U386 ( X2, K3, X3 ); 
+   XNOR2 U386 ( X2, K3, X3 ); 
    XOR2 U387 ( L36gat, K4, X4);
-   XOR2 U388 ( L606gat, K5, X5);
-   XOR2 U389 ( X7, K6, X6);
+   XNOR2 U388 ( L606gat, K5, X5);
+   XNOR2 U389 ( X7, K6, X6);
    XOR2 U390 ( X8, K7, X7);
-   XOR2 U391 ( X9, K8, X8);
+   XNOR2 U391 ( N1, K8, X8);
    XOR2 U392 ( L352gat, K9, X9);
+   IN1 U393 ( X9, N1);
+   IN1 U391 ( X5, N2);
 endmodule
 
