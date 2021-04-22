@@ -37,17 +37,18 @@ def fault_impact(file):
                     if g.name == name:
                         break
             
-            #Get the fault type
-            if line[1] == "/1:": # stuck at 1
-                fault_type = 1 #save stuck at 1 type
-                g.s_a_1 = g.s_a_1 + 1
-            elif line[1] == "/0:": # stuck at 0
-                fault_type = 0 #save stuck at 0 type
-                g.s_a_0 = g.s_a_0 + 1
-            
             # Get output bits affected
             if line[2] == "*": ## means output was affected
                 bad_output = int(line[3], 2)
+                
+                #Get the fault type
+                if line[1] == "/1:": # stuck at 1
+                    fault_type = 1 #save stuck at 1 type
+                    g.s_a_1 = g.s_a_1 + 1
+                elif line[1] == "/0:": # stuck at 0
+                    fault_type = 0 #save stuck at 0 type
+                    g.s_a_0 = g.s_a_0 + 1
+
                 if fault_type == 1: #for stuck at 1 faults
                     g.o_a_1 = g.o_a_1 + bitsaffected(output,bad_output)
                 elif fault_type == 0:
