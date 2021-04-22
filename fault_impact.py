@@ -71,13 +71,13 @@ def fault_impact_pandas(impact_list):
     #Sort by Fault impact
     df = df.sort_values(by=['Fault Impact'], ascending=False, ignore_index=True)
     return df
-
+'''
 #calculate Fault impact of c17
 f = open("c17.fault", "r")
 gates = fault_impact(f)
 f.close()
 fault_impact = fault_impact_pandas(gates)
 print(fault_impact)
-        
+'''     
 
 
