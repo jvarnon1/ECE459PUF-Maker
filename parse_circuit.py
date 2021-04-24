@@ -18,10 +18,12 @@ class circuit:
     
     def parse_b(self, file):
         for line in file:
-            self.get_inputs(line)
-            self.get_outputs(line)
-            self.get_wires(line)
-            self.get_operations(line)
+            if line.startswith("INPUT"):
+                self.get_inputs(line)
+            elif line.startswith("OUTPUT"):
+                self.get_outputs(line)
+            else:
+                self.get_operations(line)
 
     def parse_v(self, file):
         print("unable to parse verilog at this time\n")
@@ -30,3 +32,20 @@ class circuit:
         if line.startswith("INPUT"):
             input = line[line.find("(")+1:line.find(")")] # input signal is in parenthesis
             self.inputs.append(input)
+    
+    def get_outputs(self, line):
+        if line.startswith("OUTPUT"):
+            output = line[line.find("(")+1:line.find(")")] # output signal is in parenthesis
+            self.inputs.append(output)
+    
+    def get_operations(self, line):
+        l = line.split()
+        op = operation()
+        op.result = l[0]
+        
+
+class operation(self):
+    def __init__(self):
+        self.result = None
+        self.operator = None
+        self.operands = []
