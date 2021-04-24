@@ -20,7 +20,7 @@ def bitsaffected(good, bad):
         n >>= 1
     return count # the number of 1 after XOR is the number of bits changed.
 
-def fault_impact(file):
+def get_fault_impact(file):
     gate_list = []
     name_list = []
     for l in file: #each line in the file
@@ -76,7 +76,7 @@ def fault_impact_pandas(impact_list):
 '''
 #calculate Fault impact of c17
 f = open("c17.fault", "r")
-gates = fault_impact(f)
+gates = get_fault_impact(f)
 f.close()
 fault_impact = fault_impact_pandas(gates)
 print(fault_impact)
