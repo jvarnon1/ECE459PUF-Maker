@@ -7,25 +7,26 @@ class circuit:
         self.wires = []
         self.operations = []
         
-        if f_type == file_type.bench:
+        if f_type == 1:
             print("Parsing bench file... \n")
-            self.parse_b(self, file)
-        elif f_type == file_type.verilog:
+            self.parse_b(file)
+        elif f_type == 2:
             print("Parsing verilog file...\n")
-            self.parse_v(self, file)
-        else
+            self.parse_v(file)
+        else:
             print("Unrecognized circuit file\n")
+    
     def parse_b(self, file):
         for line in file:
-            self.get_inputs(self, line)
-            self.get_outputs(self, line)
-            self.get_wires(self, line)
-            self.get_operations(self, line)
+            self.get_inputs(line)
+            self.get_outputs(line)
+            self.get_wires(line)
+            self.get_operations(line)
 
-    def parse_b(self, file):
+    def parse_v(self, file):
         print("unable to parse verilog at this time\n")
-
-
-class file_type(enum.ENUM): # .bench and .v are formatted differently, must specify when creating class
-    bench = 1
-    verilog = 2
+    
+    def get_inputs(self, line):
+        if line.startswith("INPUT"):
+            input = line[line.find("(")+1:line.find(")")] # input signal is in parenthesis
+            self.inputs.append(input)
