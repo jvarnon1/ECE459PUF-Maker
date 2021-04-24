@@ -6,7 +6,7 @@ module c880g( L1gat, L8gat, L13gat, L17gat, L26gat, L29gat, L36gat, L42gat,
 		L149gat, L152gat, L153gat, L156gat, L159gat, L165gat, L171gat, 
 		L177gat, L183gat, L189gat, L195gat, L201gat, L207gat, L210gat, 
 		L219gat, L228gat, L237gat, L246gat, L255gat, L259gat, L260gat, 
-		L261gat, L267gat, L268gat, 
+		L261gat, L267gat, L268gat, K1, K2, K3, K4, K5, K6, K7, K8, K9,
 		L388gat, L389gat, L390gat, L391gat, L418gat, L419gat, L420gat, L421gat, 
 		L422gat, L423gat, L446gat, L447gat, L448gat, L449gat, L450gat, 
 		L767gat, L768gat, L850gat, L863gat, L864gat, L865gat, L866gat, 
@@ -19,7 +19,7 @@ input L1gat, L8gat, L13gat, L17gat, L26gat, L29gat, L36gat, L42gat,
 	L149gat, L152gat, L153gat, L156gat, L159gat, L165gat, L171gat, 
 	L177gat, L183gat, L189gat, L195gat, L201gat, L207gat, L210gat, 
 	L219gat, L228gat, L237gat, L246gat, L255gat, L259gat, L260gat, 
-	L261gat, L267gat, L268gat ;
+	L261gat, L267gat, L268gat, K1, K2, K3, K4, K5, K6, K7, K8, K9 ;
 output L388gat, L389gat, L390gat, L391gat, L418gat, L419gat, L420gat, L421gat, 
 	L422gat, L423gat, L446gat, L447gat, L448gat, L449gat, L450gat, 
 	L767gat, L768gat, L850gat, L863gat, L864gat, L865gat, L866gat, 
@@ -30,7 +30,7 @@ output L388gat, L389gat, L390gat, L391gat, L418gat, L419gat, L420gat, L421gat,
 
    NA4 U1 ( L1gat, L8gat, L13gat, L17gat, L269gat ); 
    NA4 U2 ( L1gat, L26gat, L13gat, L17gat, L270gat ); 
-   AND3 U3 ( L29gat, L36gat, L42gat, L273gat ); 
+   AND3 U3 ( L29gat, X4, L42gat, L273gat ); 
    AND3 U4 ( L1gat, L26gat, L51gat, L276gat ); 
    NA4 U5 ( L1gat, L8gat, L51gat, L17gat, L279gat ); 
    NA4 U6 ( L1gat, L8gat, L13gat, L55gat, L280gat ); 
@@ -39,12 +39,12 @@ output L388gat, L389gat, L390gat, L391gat, L418gat, L419gat, L420gat, L421gat,
    NA3 U9 ( L59gat, L68gat, L74gat, L286gat ); 
    AND3 U10 ( L29gat, L75gat, L80gat, L287gat ); 
    AND3 U11 ( L29gat, L75gat, L42gat, L290gat ); 
-   AND3 U12 ( L29gat, L36gat, L80gat, L291gat ); 
-   AND3 U13 ( L29gat, L36gat, L42gat, L292gat ); 
+   AND3 U12 ( L29gat, X4, L80gat, L291gat ); 
+   AND3 U13 ( L29gat, X4, L42gat, L292gat ); 
    AND3 U14 ( L59gat, L75gat, L80gat, L293gat ); 
    AND3 U15 ( L59gat, L75gat, L42gat, L294gat ); 
-   AND3 U16 ( L59gat, L36gat, L80gat, L295gat ); 
-   AND3 U17 ( L59gat, L36gat, L42gat, L296gat ); 
+   AND3 U16 ( L59gat, X4, L80gat, L295gat ); 
+   AND3 U17 ( L59gat, X4, L42gat, L296gat ); 
    AND2 U18 ( L85gat, L86gat, L297gat ); 
    OR2 U19 ( L87gat, L88gat, L298gat ); 
    NA2 U20 ( L91gat, L96gat, L301gat ); 
@@ -65,21 +65,21 @@ output L388gat, L389gat, L390gat, L391gat, L418gat, L419gat, L420gat, L421gat,
    AND2 U35 ( L17gat, L42gat, L323gat ); 
    NA2 U36 ( L159gat, L165gat, L324gat ); 
    OR2 U37 ( L159gat, L165gat, L325gat ); 
-   NA2 U38 ( L171gat, L177gat, L326gat ); 
-   OR2 U39 ( L171gat, L177gat, L327gat ); 
+   NA2 U38 ( L171gat, X3, L326gat ); 
+   OR2 U39 ( L171gat, X3, L327gat ); 
    NA2 U40 ( L183gat, L189gat, L328gat ); 
    OR2 U41 ( L183gat, L189gat, L329gat ); 
    NA2 U42 ( L195gat, L201gat, L330gat ); 
    OR2 U43 ( L195gat, L201gat, L331gat ); 
-   AND2 U44 ( L210gat, L91gat, L332gat ); 
-   AND2 U45 ( L210gat, L96gat, L333gat ); 
-   AND2 U46 ( L210gat, L101gat, L334gat ); 
-   AND2 U47 ( L210gat, L106gat, L335gat ); 
-   AND2 U48 ( L210gat, L111gat, L336gat ); 
+   AND2 U44 ( X1, L91gat, L332gat ); 
+   AND2 U45 ( X1, L96gat, L333gat ); 
+   AND2 U46 ( X1, L101gat, L334gat ); 
+   AND2 U47 ( X1, L106gat, L335gat ); 
+   AND2 U48 ( X1, L111gat, L336gat ); 
    AND2 U49 ( L255gat, L259gat, L337gat ); 
-   AND2 U50 ( L210gat, L116gat, L338gat ); 
+   AND2 U50 ( X1, L116gat, L338gat ); 
    AND2 U51 ( L255gat, L260gat, L339gat ); 
-   AND2 U52 ( L210gat, L121gat, L340gat ); 
+   AND2 U52 ( X1, L121gat, L340gat ); 
    AND2 U53 ( L255gat, L267gat, L341gat ); 
    IN1 U54 ( L269gat, L342gat ); 
    IN1 U55 ( L273gat, L343gat ); 
@@ -123,14 +123,14 @@ output L388gat, L389gat, L390gat, L391gat, L418gat, L419gat, L420gat, L421gat,
    IN1 U93 ( L363gat, L407gat ); 
    IN1 U94 ( L366gat, L408gat ); 
    AND2 U95 ( L363gat, L366gat, L409gat ); 
-   NA2 U96 ( L347gat, L352gat, L410gat ); 
+   NA2 U96 ( L347gat, X6, L410gat ); 
    IN1 U97 ( L376gat, L411gat ); 
    IN1 U98 ( L379gat, L412gat ); 
    AND2 U99 ( L376gat, L379gat, L413gat ); 
    IN1 U100 ( L382gat, L414gat ); 
    IN1 U101 ( L385gat, L415gat ); 
    AND2 U102 ( L382gat, L385gat, L416gat ); 
-   AND2 U103 ( L210gat, L369gat, L417gat ); 
+   AND2 U103 ( X1, L369gat, L417gat ); 
    BU1 U104 ( L342gat, L418gat ); 
    BU1 U105 ( L344gat, L419gat ); 
    BU1 U106 ( L351gat, L420gat ); 
@@ -198,7 +198,7 @@ output L388gat, L389gat, L390gat, L391gat, L418gat, L419gat, L420gat, L421gat,
    AND2 U168 ( L451gat, L159gat, L522gat ); 
    AND2 U169 ( L451gat, L165gat, L523gat ); 
    AND2 U170 ( L451gat, L171gat, L524gat ); 
-   AND2 U171 ( L451gat, L177gat, L525gat ); 
+   AND2 U171 ( L451gat, X3, L525gat ); 
    AND2 U172 ( L451gat, L183gat, L526gat ); 
    NA2 U173 ( L451gat, L189gat, L527gat ); 
    NA2 U174 ( L451gat, L195gat, L528gat ); 
@@ -240,8 +240,8 @@ output L388gat, L389gat, L390gat, L391gat, L418gat, L419gat, L420gat, L421gat,
    NA2 U210 ( L561gat, L171gat, L606gat ); 
    OR2 U211 ( L561gat, L171gat, L609gat ); 
    AND2 U212 ( L246gat, L561gat, L615gat ); 
-   NA2 U213 ( L565gat, L177gat, L616gat ); 
-   OR2 U214 ( L565gat, L177gat, L619gat ); 
+   NA2 U213 ( L565gat, X3, L616gat ); 
+   OR2 U214 ( L565gat, X3, L619gat ); 
    AND2 U215 ( L246gat, L565gat, L624gat ); 
    NA2 U216 ( L569gat, L183gat, L625gat ); 
    OR2 U217 ( L569gat, L183gat, L628gat ); 
@@ -263,8 +263,8 @@ output L388gat, L389gat, L390gat, L391gat, L418gat, L419gat, L420gat, L421gat,
    IN1 U233 ( L597gat, L670gat ); 
    AND2 U234 ( L600gat, L597gat, L673gat ); 
    NO2 U235 ( L605gat, L523gat, L677gat ); 
-   IN1 U236 ( L606gat, L678gat ); 
-   AND2 U237 ( L609gat, L606gat, L682gat ); 
+   IN1 U236 ( N2, L678gat ); 
+   AND2 U237 ( L609gat, N2, L682gat ); 
    NO2 U238 ( L615gat, L524gat, L686gat ); 
    IN1 U239 ( L616gat, L687gat ); 
    AND2 U240 ( L619gat, L616gat, L692gat ); 
@@ -410,6 +410,17 @@ output L388gat, L389gat, L390gat, L391gat, L418gat, L419gat, L420gat, L421gat,
    IN1 U380 ( L873gat, L877gat ); 
    BU1 U381 ( L875gat, L878gat ); 
    BU1 U382 ( L876gat, L879gat ); 
-   BU1 U383 ( L877gat, L880gat ); 
+   BU1 U383 ( L877gat, L880gat );
+   XOR2 U384 ( L210gat, K1, X1 );
+   XOR2 U385 ( L177gat, K2, X2 );
+   XNOR2 U386 ( X2, K3, X3 ); 
+   XOR2 U387 ( L36gat, K4, X4);
+   XNOR2 U388 ( L606gat, K5, X5);
+   XNOR2 U389 ( X7, K6, X6);
+   XOR2 U390 ( X8, K7, X7);
+   XNOR2 U391 ( N1, K8, X8);
+   XOR2 U392 ( L352gat, K9, X9);
+   IN1 U393 ( X9, N1);
+   IN1 U391 ( X5, N2);
 endmodule
 

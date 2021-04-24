@@ -25,7 +25,8 @@ def fault_impact(file):
     name_list = []
     for l in file: #each line in the file
         line = l.split() #split up the words on the line
-        if line[0].startswith("N") | line[0].startswith("L"): #gates start with N or L
+        if line[0].startswith("N") | line[0].startswith("L")| #gates start with N or L
+         | line[0].startswith("G") | line[0].startswith("K") | line[0].startswith("X"): #gates start with G
             # Get the gate's name
             name = line[0]
             if name not in name_list:
@@ -37,17 +38,18 @@ def fault_impact(file):
                     if g.name == name:
                         break
             
-            #Get the fault type
-            if line[1] == "/1:": # stuck at 1
-                fault_type = 1 #save stuck at 1 type
-                g.s_a_1 = g.s_a_1 + 1
-            elif line[1] == "/0:": # stuck at 0
-                fault_type = 0 #save stuck at 0 type
-                g.s_a_0 = g.s_a_0 + 1
-            
             # Get output bits affected
             if line[2] == "*": ## means output was affected
                 bad_output = int(line[3], 2)
+                
+                #Get the fault type
+                if line[1] == "/1:": # stuck at 1
+                    fault_type = 1 #save stuck at 1 type
+                    g.s_a_1 = g.s_a_1 + 1
+                elif line[1] == "/0:": # stuck at 0
+                    fault_type = 0 #save stuck at 0 type
+                    g.s_a_0 = g.s_a_0 + 1
+
                 if fault_type == 1: #for stuck at 1 faults
                     g.o_a_1 = g.o_a_1 + bitsaffected(output,bad_output)
                 elif fault_type == 0:
@@ -71,13 +73,13 @@ def fault_impact_pandas(impact_list):
     #Sort by Fault impact
     df = df.sort_values(by=['Fault Impact'], ascending=False, ignore_index=True)
     return df
-
+'''
 #calculate Fault impact of c17
 f = open("c17.fault", "r")
 gates = fault_impact(f)
 f.close()
 fault_impact = fault_impact_pandas(gates)
 print(fault_impact)
-        
+'''     
 
 
