@@ -15,6 +15,16 @@ class circuit:
             self.parse_v(self, file)
         else
             print("Unrecognized circuit file\n")
+    def parse_b(self, file):
+        for line in file:
+            self.get_inputs(self, line)
+            self.get_outputs(self, line)
+            self.get_wires(self, line)
+            self.get_operations(self, line)
+
+    def parse_b(self, file):
+        print("unable to parse verilog at this time\n")
+
 
 class file_type(enum.ENUM): # .bench and .v are formatted differently, must specify when creating class
     bench = 1
