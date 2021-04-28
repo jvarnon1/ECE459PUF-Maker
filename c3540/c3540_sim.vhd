@@ -4,6 +4,7 @@ use IEEE.numeric_std.all;
 use ieee.std_logic_textio.all;
 use IEEE.std_logic_arith.all;
 use IEEE.std_logic_unsigned.all;
+use IEEE.numeric_std.all; 
 
 
 
@@ -40,30 +41,29 @@ architecture Behavioral of c3540_sim is
      -- 0000001001101011111000 correct output
      -- 110100100 correct key
 begin
-
+test: c3540 port map (N1 => input(49), N13 => input(48), N20 => input(47), N33 => input(46), N41 => input(45), N45 => input(44), N50 => input(43), N58 => input(42), N68 => input(41),
+            N77 => input(40), N87 => input(39), N97 => input(38),N107 => input(37),N116 => input(36),N124 => input(35),N125 => input(34),N128 => input(33),N132 => input(32),N137 => input(31),N143 => input(30),
+            N150 => input(29),N159 => input(28),N169 => input(27),N179 => input(26),N190 => input(25),N200 => input(24),N213 => input(23),N222 => input(22),N223 => input(21),N226 => input(20),N232 => input(19),
+            N238 => input(18),N244 => input(17),N250 => input(16),N257 => input(15),N264 => input(14),N270 => input(13),N274 => input(12),N283 => input(11),N294 => input(10),N303 => input(9),N311 => input(8),
+            N317 => input(7),N322 => input(6),N326 => input(5),N329 => input(4),N330 => input(3),N343 => input(2),N349 => input(1),N350 => input(0),N1713 => output(21), N1947 => output(20),N3195 => output(19),
+            N3833 => output(18),N3987 => output(17),N4028 => output(16),N4145 => output(15),N4589 => output(14),N4667 => output(13),N4815 => output(12),N4944 => output(11),N5002 => output(10),N5045 => output(9),
+            N5047 => output(8),N5078 => output(7),N5102 => output(6),N5120 => output(5),N5121 => output(4),N5192 => output(3),N5231 => output(2),N5360 => output(1),N5361 => output(0), K1 => key(8), K2 => key(7),
+            K3 => key(6),K4 => key(5),K5 => key(4),K6 => key(3),K7 => key(2),K8 => key(1),K9 => key(0));
+            
     process
 
     begin
          
     stimloop : for i in 0 to 511 loop
     
-            wait for 10ns;
+            wait for 1ns;
     
             key <= std_logic_vector(to_unsigned(i, key'length));  
     
-            wait for 10ns;
+  --          wait for 1ns;
     
         end loop stimloop;
         
     end process;
     
-    test: c3540 port map (N1 => input(49), N13 => input(48), N20 => input(47), N33 => input(46), N41 => input(45), N45 => input(44), N50 => input(43), N58 => input(42), N68 => input(41),
-        N77 => input(40), N87 => input(39), N97 => input(38),N107 => input(37),N116 => input(36),N124 => input(35),N125 => input(34),N128 => input(33),N132 => input(32),N137 => input(31),N143 => input(30),
-        N150 => input(29),N159 => input(28),N169 => input(27),N179 => input(26),N190 => input(25),N200 => input(24),N213 => input(23),N222 => input(22),N223 => input(21),N226 => input(20),N232 => input(19),
-        N238 => input(18),N244 => input(17),N250 => input(16),N257 => input(15),N264 => input(14),N270 => input(13),N274 => input(12),N283 => input(11),N294 => input(10),N303 => input(9),N311 => input(8),
-        N317 => input(7),N322 => input(6),N326 => input(5),N329 => input(4),N330 => input(3),N343 => input(2),N349 => input(1),N350 => input(0),N1713 => output(21), N1947 => output(20),N3195 => output(19),
-        N3833 => output(18),N3987 => output(17),N4028 => output(16),N4145 => output(15),N4589 => output(14),N4667 => output(13),N4815 => output(12),N4944 => output(11),N5002 => output(10),N5045 => output(9),
-        N5047 => output(8),N5078 => output(7),N5102 => output(6),N5120 => output(5),N5121 => output(4),N5192 => output(3),N5231 => output(2),N5360 => output(1),N5361 => output(0), K1 => key(8), K2 => key(7),
-        K3 => key(6),K4 => key(5),K5 => key(4),K6 => key(3),K7 => key(2),K8 => key(1),K9 => key(0));
-        
 end Behavioral;
