@@ -44,36 +44,36 @@ architecture Behavioral of c880_test is
         );
     end component;
     
+    signal input : std_logic_vector (59 downto 0) := "000010011010011000010110001111010001100110111100100000100101";
     signal key : std_logic_vector (8 downto 0) := "110100100"; --the correct key is 420
+    signal output : std_logic_vector (25 downto 0) := "00000000000000000000000000"; --correct output is 00000111111000111000000000
+    
     --signal key1, key2, key4, key7 : std_logic := '1';
     --signal key3, key5, key6, key8, key9: std_logic := '0'; 
-    signal L1gats, L8gats, L13gats, L17gats, L26gats, L29gats, L36gats, L42gats, L51gats, L55gats, L59gats, L68gats, L72gats, L73gats, L74gats,L75gats, L80gats, L85gats, L86gats, L87gats, L88gats, L89gats, L90gats, L91gats, L96gats, L101gats, L106gats, L111gats, L116gats, L121gats, L126gats, L130gats, L135gats, L138gats, L143gats, L146gats, L149gats, L152gats, L153gats, L156gats, L159gats, L165gats, L171gats,L177gats, L183gats, L189gats, L195gats, L201gats, L207gats, L210gats, L219gats, L228gats, L237gats, L246gats, L255gats, L259gats, L260gats,L261gats, L267gats, L268gats, L388gats, L389gats, L390gats, L391gats, L418gats, L419gats, L420gats, L421gats, L422gats, L423gats, L446gats, L447gats, L448gats, L449gats, L450gats, L767gats, L768gats, L850gats, L863gats, L864gats, L865gats, L866gats, L874gats, L878gats, L879gats, L880gats : std_logic := '0';
+--    signal L1gats, L8gats, L13gats, L17gats, L26gats, L29gats, L36gats, L42gats, L51gats, L55gats, L59gats, L68gats, L72gats, L73gats, L74gats,L75gats, L80gats, L85gats, L86gats, L87gats, L88gats, L89gats, L90gats, L91gats, L96gats, L101gats, L106gats, L111gats, L116gats, L121gats, L126gats, L130gats, L135gats, L138gats, L143gats, L146gats, L149gats, L152gats, L153gats, L156gats, L159gats, L165gats, L171gats,L177gats, L183gats, L189gats, L195gats, L201gats, L207gats, L210gats, L219gats, L228gats, L237gats, L246gats, L255gats, L259gats, L260gats,L261gats, L267gats, L268gats, L388gats, L389gats, L390gats, L391gats, L418gats, L419gats, L420gats, L421gats, L422gats, L423gats, L446gats, L447gats, L448gats, L449gats, L450gats, L767gats, L768gats, L850gats, L863gats, L864gats, L865gats, L866gats, L874gats, L878gats, L879gats, L880gats : std_logic := '0';
     --signal key0, key1, key2, key3, key4, key5, key6, key7, key8 : std_logic;
 begin
-    test: c880g port map( K9 => key(0), K8 => key(1), K7 => key(2), K6 => key(3), K5 => key(4), K4 => key(5), K3 => key(6), K2 => key(7), K1 => key(8),   
-        L1gat => L1gats, L8gat => L8gats, L13gat => L13gats, L17gat => L17gats, L26gat => L26gats, L29gat => L29gats, L36gat => L36gats, L42gat => L42gats, L51gat => L51gats, L55gat => L55gats, L59gat => L59gats, L68gat => L68gats, 
-        L72gat => L72gats, L73gat => L73gats, L74gat => L74gats,L75gat => L75gats, L80gat => L80gats, L85gat => L85gats, L86gat => L86gats, L87gat => L87gats, L88gat => L88gats, L89gat => L89gats, L90gat => L90gats, L91gat => L91gats, L96gat => L96gats, 
-        L101gat => L101gats, L106gat => L106gats, L111gat => L111gats, L116gat => L116gats, L121gat => L121gats, L126gat => L126gats, L130gat => L130gats, L135gat => L135gats, L138gat => L138gats, L143gat => L143gats, L146gat => L146gats, L149gat => L149gats, 
-        L152gat => L152gats, L153gat => L153gats, L156gat => L156gats, L159gat => L159gats, L165gat => L165gats, L171gat => L171gats,L177gat => L177gats, L183gat => L183gats, L189gat => L189gats, L195gat => L195gats, L201gat => L201gats, L207gat => L207gats, 
-        L210gat => L210gats, L219gat => L219gats, L228gat => L228gats, L237gat => L237gats, L246gat => L246gats, L255gat => L255gats, L259gat => L259gats, L260gat => L260gats,L261gat => L261gats, L267gat => L267gats, L268gat => L268gats, 
-        L388gat  => L388gats, L389gat => L389gats, L390gat => L390gats, L391gat => L391gats, L418gat => L418gats, L419gat => L419gats, L420gat => L420gats, L421gat => L421gats, L422gat => L422gats, 
-        L423gat => L423gats, L446gat => L446gats, L447gat => L447gats, L448gat => L448gats, L449gat => L449gats, L450gat => L450gats, L767gat => L767gats, L768gat => L768gats, L850gat => L850gats, L863gat => L863gats, L864gat => L864gats, L865gat => L865gats, L866gat => L866gats, 
-        L874gat => L874gats, L878gat => L878gats, L879gat => L879gats, L880gat => L880gats);
+    test: c880g port map( K9 => key(8), K8 => key(7), K7 => key(6), K6 => key(5), K5 => key(4), K4 => key(3), K3 => key(2), K2 => key(1), K1 => key(0),   
+        L1gat => input(59), L8gat => input(58), L13gat => input(57), L17gat => input(56), L26gat => input(55), L29gat => input(54), L36gat => input(53), L42gat => input(52), L51gat => input(51), L55gat => input(50), L59gat => input(49), L68gat => input(48), 
+        L72gat => input(47), L73gat => input(46), L74gat => input(45),L75gat => input(44), L80gat => input(43), L85gat => input(42), L86gat => input(41), L87gat => input(40), L88gat => input(39), L89gat => input(38), L90gat => input(37), L91gat => input(36), L96gat => input(35), 
+        L101gat => input(34), L106gat => input(33), L111gat => input(32), L116gat => input(31), L121gat => input(30), L126gat => input(29), L130gat => input(28), L135gat => input(27), L138gat => input(26), L143gat => input(25), L146gat => input(24), L149gat => input(23), 
+        L152gat => input(22), L153gat => input(21), L156gat => input(20), L159gat => input(19), L165gat => input(18), L171gat => input(17),L177gat => input(16), L183gat => input(15), L189gat => input(14), L195gat => input(13), L201gat => input(12), L207gat => input(11), 
+        L210gat => input(10), L219gat => input(9), L228gat => input(8), L237gat => input(7), L246gat => input(6), L255gat => input(5), L259gat => input(4), L260gat => input(3),L261gat => input(2), L267gat => input(1), L268gat => input(0), 
+        L388gat  => output(25), L389gat => output(24), L390gat => output(23), L391gat => output(22), L418gat => output(21), L419gat => output(20), L420gat => output(19), L421gat => output(18), L422gat => output(17), 
+        L423gat => output(16), L446gat => output(15), L447gat => output(14), L448gat => output(13), L449gat => output(12), L450gat => output(11), L767gat => output(10), L768gat => output(9), L850gat => output(8), L863gat => output(7), L864gat => output(6), L865gat => output(5), L866gat => output(4), 
+        L874gat => output(3), L878gat => output(2), L879gat => output(1), L880gat => output(0));
     process
     begin
     
     stimloop : for i in 0 to 511 loop
     
-            wait for 10ns;
+            wait for 1ns;
     
                  key <= std_logic_vector(to_unsigned(i, 9)); 
     
-            wait for 10ns;
+   --         wait for 10ns;
     
         end loop stimloop;
-      
-
-
-        
+             
     end process;
 end Behavioral;
