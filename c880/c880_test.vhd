@@ -36,7 +36,7 @@ entity c880_test is
 end c880_test;
 
 architecture Behavioral of c880_test is
-    component c880 is
+    component c880g is
         port (
             L1gat, L8gat, L13gat, L17gat, L26gat, L29gat, L36gat, L42gat, L51gat, L55gat, L59gat, L68gat, L72gat, L73gat, L74gat,L75gat, L80gat, L85gat, L86gat, L87gat, L88gat, L89gat, L90gat, L91gat, L96gat, L101gat, L106gat, L111gat, L116gat, L121gat, L126gat, L130gat, L135gat, L138gat, L143gat, L146gat, L149gat, L152gat, L153gat, L156gat, L159gat, L165gat, L171gat,L177gat, L183gat, L189gat, L195gat, L201gat, L207gat, L210gat, L219gat, L228gat, L237gat, L246gat, L255gat, L259gat, L260gat,L261gat, L267gat, L268gat, K1, K2, K3, K4, K5, K6, K7, K8, K9: in std_logic;
             
@@ -62,7 +62,7 @@ begin
     process
     begin
     
-    stimloop : for i in 0 to 255 loop
+    stimloop : for i in 0 to 511 loop
     
             wait for 10ns;
     
