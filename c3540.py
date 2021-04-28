@@ -9,7 +9,7 @@ def get_gate(impactdata): # impactdata is a pandas dataframe of gates sorted by 
 
 f = open("c3540/c3540.fault", "r")
 print("Calculating Fault Impact...\n")
-gates = fi.fault_impact(f)
+gates = fi.get_fault_impact(f)
 f.close()
 #print(gates)
 print("Sorting Gates... \n")
