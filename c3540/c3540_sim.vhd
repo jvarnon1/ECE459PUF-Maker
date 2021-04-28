@@ -34,7 +34,7 @@ architecture Behavioral of c3540_sim is
           N5360,N5361 : out std_logic);
      end component;
      
-     signal key : std_logic_vector (8 downto 0) := "000000000";
+     signal key : std_logic_vector (8 downto 0) := "110100100";
      signal input : std_logic_vector (49 downto 0) := "10010111111101010011001001110101101101110010110000";
      signal output : std_logic_vector (21 downto 0) := "0000000000000000000000";
      -- 0000001001101011111000 correct output
