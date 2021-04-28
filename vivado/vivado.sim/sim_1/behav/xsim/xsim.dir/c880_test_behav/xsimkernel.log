@@ -1,0 +1,4 @@
+Running: xsim.dir/c880_test_behav/xsimk.exe -simmode gui -wdb c880_test_behav.wdb -simrunnum 0 -socket 64205
+Design successfully loaded
+Design Loading Memory Usage: 6160 KB (Peak: 6160 KB)
+Design Loading CPU Usage: 0 ms
