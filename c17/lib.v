@@ -1,100 +1,106 @@
-module TX (Z, A, E);
+module TX (A, E, Z);
 output Z;
 input A, E;
 bufif1 (Z, A, E);
 endmodule
 
-module IV (Z, A);
+module IV ( A, Z);
 output Z;
 input A;
 not (Z, A);
 endmodule
 
-module BU (Z, A);
+module BU (A, Z);
 output Z;
 input A;
 buf (Z, A);
 endmodule
 
-module AN4 (Z, A, B, C, D);
+module AN4(A, B, C, D, Z);
 output Z;
 input A, B, C, D;
 and (Z, A, B, C, D);
 endmodule
 
-module AN3 (Z, A, B, C);
+module AN3 (A, B, C, Z);
 output Z;
 input A, B, C;
 and (Z, A, B, C);
 endmodule
 
-module AN2 (Z, A, B);
+module AN2 (A, B, Z);
 output Z;
 input A, B;
 and (Z, A, B);
 endmodule
 
-module ND4 (Z, A, B, C, D);
+module ND4 (A, B, C, D, Z);
 output Z;
 input A, B, C, D;
 nand (Z, A, B, C, D);
 endmodule
 
-module ND3 (Z, A, B, C);
+module ND3 (A, B, C, Z);
 output Z;
 input A, B, C;
 nand (Z, A, B, C);
 endmodule
 
-module ND2 (Z, A, B);
+module ND2 (A, B, Z);
 output Z;
 input A, B;
 nand (Z, A, B);
 endmodule
 
-module OR4 (Z, A, B, C, D);
+module OR4 (A, B, C, D, Z);
 output Z;
 input A, B, C, D;
 or (Z, A, B, C, D);
 endmodule
 
-module OR3 (Z, A, B, C);
+module OR3 (A, B, C, Z);
 output Z;
 input A, B, C;
 or (Z, A, B, C);
 endmodule
 
-module OR2 (Z, A, B);
+module OR2 (A, B, Z);
 output Z;
 input A, B;
 or (Z, A, B);
 endmodule
 
-module NR4 (Z, A, B, C, D);
+module NR4 (A, B, C, D, Z);
 output Z;
 input A, B, C, D;
 nor (Z, A, B, C, D);
 endmodule
 
-module NR3 (Z, A, B, C);
+module NR3 (A, B, C, Z);
 output Z;
 input A, B, C;
 nor (Z, A, B, C);
 endmodule
 
-module NR2 (Z, A, B);
+module NR2 (A, B, Z);
 output Z;
 input A, B;
 nor (Z, A, B);
 endmodule
 
-module EO (Z, A, B);
+module EO (A, B, Z);
 output Z;
 input A, B;
 xor (Z, A, B);
 endmodule
 
-module MUX21H (Z, A, S, B);
+module EN (A, B, Z);
+output Z;
+input A, B;
+xnor (Z, A, B);
+endmodule
+
+module MUX21H (A, S, B, Z);
 output Z;
 input A, S, B;
 wire SN, NA1, NA2;

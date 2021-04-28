@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="c880_test_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="c880_test" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="435001fs"></ZoomEndTime>
+      <Cursor1Time time="4fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="114"></NameColumnWidth>
+      <ValueColumnWidth column_width="63"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="87" />
+   <wvobject fp_name="/c880_test/key" type="array">
+      <obj_property name="ElementShortName">key[8:0]</obj_property>
+      <obj_property name="ObjectShortName">key[8:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/c880_test/L1gats" type="logic">
+      <obj_property name="ElementShortName">L1gats</obj_property>
+      <obj_property name="ObjectShortName">L1gats</obj_property>
+   </wvobject>
+   <wvobject fp_name="/c880_test/L8gats" type="logic">
+      <obj_property name="ElementShortName">L8gats</obj_property>
+      <obj_property name="ObjectShortName">L8gats</obj_property>
+   </wvobject>
+   <wvobject fp_name="/c880_test/L13gats" type="logic">
+      <obj_property name="ElementShortName">L13gats</obj_property>
+      <obj_property name="ObjectShortName">L13gats</obj_property>
+   </wvobject>
+   <wvobject fp_name="/c880_test/L17gats" type="logic">
+      <obj_property name="ElementShortName">L17gats</obj_property>
+      <obj_property name="ObjectShortName">L17gats</obj_property>
+   </wvobject>
+   <wvobject fp_name="/c880_test/L26gats" type="logic">
+      <obj_property name="ElementShortName">L26gats</obj_property>
+      <obj_property name="ObjectShortName">L26gats</obj_property>
+   </wvobject>
+   <wvobject fp_name="/c880_test/L29gats" type="logic">
+      <obj_property name="ElementShortName">L29gats</obj_property>
+      <obj_property name="ObjectShortName">L29gats</obj_property>
+   </wvobject>
+   <wvobject fp_name="/c880_test/L36gats" type="logic">
+      <obj_property name="ElementShortName">L36gats</obj_property>
+      <obj_property name="ObjectShortName">L36gats</obj_property>
+   </wvobject>
+   <wvobject fp_name="/c880_test/L42gats" type="logic">
+      <obj_property name="ElementShortName">L42gats</obj_property>
+      <obj_property name="ObjectShortName">L42gats</obj_property>
+   </wvobject>
+   <wvobject fp_name="/c880_test/L51gats" type="logic">
+      <obj_property name="ElementShortName">L51gats</obj_property>
+      <obj_property name="ObjectShortName">L51gats</obj_property>
+   </wvobject>
+   <wvobject fp_name="/c880_test/L55gats" type="logic">
+      <obj_property name="ElementShortName">L55gats</obj_property>
+      <obj_property name="ObjectShortName">L55gats</obj_property>
+   </wvobject>
+   <wvobject fp_name="/c880_test/L59gats" type="logic">
+      <obj_property name="ElementShortName">L59gats</obj_property>
+      <obj_property name="ObjectShortName">L59gats</obj_property>
+   </wvobject>
+   <wvobject fp_name="/c880_test/L68gats" type="logic">
+      <obj_property name="ElementShortName">L68gats</obj_property>
+      <obj_property name="ObjectShortName">L68gats</obj_property>
+   </wvobject>
+   <wvobject fp_name="/c880_test/L72gats" type="logic">
+      <obj_property name="ElementShortName">L72gats</obj_property>
+      <obj_property name="ObjectShortName">L72gats</obj_property>
+   </wvobject>
+   <wvobject fp_name="/c880_test/L73gats" type="logic">
+      <obj_property name="ElementShortName">L73gats</obj_property>
+      <obj_property name="ObjectShortName">L73gats</obj_property>
+   </wvobject>
+   <wvobject fp_name="/c880_test/L74gats" type="logic">
+      <obj_property name="ElementShortName">L74gats</obj_property>
+      <obj_property name="ObjectShortName">L74gats</obj_property>
+   </wvobject>
+   <wvobject fp_name="/c880_test/L75gats" type="logic">
+      <obj_property name="ElementShortName">L75gats</obj_property>
+      <obj_property name="ObjectShortName">L75gats</obj_property>
+   </wvobject>
+   <wvobject fp_name="/c880_test/L80gats" type="logic">
+      <obj_property name="ElementShortName">L80gats</obj_property>
+      <obj_property name="ObjectShortName">L80gats</obj_property>
+   </wvobject>
+   <wvobject fp_name="/c880_test/L85gats" type="logic">
+      <obj_property name="ElementShortName">L85gats</obj_property>
+      <obj_property name="ObjectShortName">L85gats</obj_property>
+   </wvobject>
+   <wvobject fp_name="/c880_test/L86gats" type="logic">
+      <obj_property name="ElementShortName">L86gats</obj_property>
+      <obj_property name="ObjectShortName">L86gats</obj_property>
+   </wvobject>
+   <wvobject fp_name="/c880_test/L87gats" type="logic">
+      <obj_property name="ElementShortName">L87gats</obj_property>
+      <obj_property name="ObjectShortName">L87gats</obj_property>
+   </wvobject>
+   <wvobject fp_name="/c880_test/L88gats" type="logic">
+      <obj_property name="ElementShortName">L88gats</obj_property>
+      <obj_property name="ObjectShortName">L88gats</obj_property>
+   </wvobject>
+   <wvobject fp_name="/c880_test/L89gats" type="logic">
+      <obj_property name="ElementShortName">L89gats</obj_property>
+      <obj_property name="ObjectShortName">L89gats</obj_property>
+   </wvobject>
+   <wvobject fp_name="/c880_test/L90gats" type="logic">
+      <obj_property name="ElementShortName">L90gats</obj_property>
+      <obj_property name="ObjectShortName">L90gats</obj_property>
+   </wvobject>
+   <wvobject fp_name="/c880_test/L91gats" type="logic">
+      <obj_property name="ElementShortName">L91gats</obj_property>
+      <obj_property name="ObjectShortName">L91gats</obj_property>
+   </wvobject>
+   <wvobject fp_name="/c880_test/L96gats" type="logic">
+      <obj_property name="ElementShortName">L96gats</obj_property>
+      <obj_property name="ObjectShortName">L96gats</obj_property>
+   </wvobject>
+   <wvobject fp_name="/c880_test/L101gats" type="logic">
+      <obj_property name="ElementShortName">L101gats</obj_property>
+      <obj_property name="ObjectShortName">L101gats</obj_property>
+   </wvobject>
+   <wvobject fp_name="/c880_test/L106gats" type="logic">
+      <obj_property name="ElementShortName">L106gats</obj_property>
+      <obj_property name="ObjectShortName">L106gats</obj_property>
+   </wvobject>
+   <wvobject fp_name="/c880_test/L111gats" type="logic">
+      <obj_property name="ElementShortName">L111gats</obj_property>
+      <obj_property name="ObjectShortName">L111gats</obj_property>
+   </wvobject>
+   <wvobject fp_name="/c880_test/L116gats" type="logic">
+      <obj_property name="ElementShortName">L116gats</obj_property>
+      <obj_property name="ObjectShortName">L116gats</obj_property>
+   </wvobject>
+   <wvobject fp_name="/c880_test/L121gats" type="logic">
+      <obj_property name="ElementShortName">L121gats</obj_property>
+      <obj_property name="ObjectShortName">L121gats</obj_property>
+   </wvobject>
+   <wvobject fp_name="/c880_test/L126gats" type="logic">
+      <obj_property name="ElementShortName">L126gats</obj_property>
+      <obj_property name="ObjectShortName">L126gats</obj_property>
+   </wvobject>
+   <wvobject fp_name="/c880_test/L130gats" type="logic">
+      <obj_property name="ElementShortName">L130gats</obj_property>
+      <obj_property name="ObjectShortName">L130gats</obj_property>
+   </wvobject>
+   <wvobject fp_name="/c880_test/L135gats" type="logic">
+      <obj_property name="ElementShortName">L135gats</obj_property>
+      <obj_property name="ObjectShortName">L135gats</obj_property>
+   </wvobject>
+   <wvobject fp_name="/c880_test/L138gats" type="logic">
+      <obj_property name="ElementShortName">L138gats</obj_property>
+      <obj_property name="ObjectShortName">L138gats</obj_property>
+   </wvobject>
+   <wvobject fp_name="/c880_test/L143gats" type="logic">
+      <obj_property name="ElementShortName">L143gats</obj_property>
+      <obj_property name="ObjectShortName">L143gats</obj_property>
+   </wvobject>
+   <wvobject fp_name="/c880_test/L146gats" type="logic">
+      <obj_property name="ElementShortName">L146gats</obj_property>
+      <obj_property name="ObjectShortName">L146gats</obj_property>
+   </wvobject>
+   <wvobject fp_name="/c880_test/L149gats" type="logic">
+      <obj_property name="ElementShortName">L149gats</obj_property>
+      <obj_property name="ObjectShortName">L149gats</obj_property>
+   </wvobject>
+   <wvobject fp_name="/c880_test/L152gats" type="logic">
+      <obj_property name="ElementShortName">L152gats</obj_property>
+      <obj_property name="ObjectShortName">L152gats</obj_property>
+   </wvobject>
+   <wvobject fp_name="/c880_test/L153gats" type="logic">
+      <obj_property name="ElementShortName">L153gats</obj_property>
+      <obj_property name="ObjectShortName">L153gats</obj_property>
+   </wvobject>
+   <wvobject fp_name="/c880_test/L156gats" type="logic">
+      <obj_property name="ElementShortName">L156gats</obj_property>
+      <obj_property name="ObjectShortName">L156gats</obj_property>
+   </wvobject>
+   <wvobject fp_name="/c880_test/L159gats" type="logic">
+      <obj_property name="ElementShortName">L159gats</obj_property>
+      <obj_property name="ObjectShortName">L159gats</obj_property>
+   </wvobject>
+   <wvobject fp_name="/c880_test/L165gats" type="logic">
+      <obj_property name="ElementShortName">L165gats</obj_property>
+      <obj_property name="ObjectShortName">L165gats</obj_property>
+   </wvobject>
+   <wvobject fp_name="/c880_test/L171gats" type="logic">
+      <obj_property name="ElementShortName">L171gats</obj_property>
+      <obj_property name="ObjectShortName">L171gats</obj_property>
+   </wvobject>
+   <wvobject fp_name="/c880_test/L177gats" type="logic">
+      <obj_property name="ElementShortName">L177gats</obj_property>
+      <obj_property name="ObjectShortName">L177gats</obj_property>
+   </wvobject>
+   <wvobject fp_name="/c880_test/L183gats" type="logic">
+      <obj_property name="ElementShortName">L183gats</obj_property>
+      <obj_property name="ObjectShortName">L183gats</obj_property>
+   </wvobject>
+   <wvobject fp_name="/c880_test/L189gats" type="logic">
+      <obj_property name="ElementShortName">L189gats</obj_property>
+      <obj_property name="ObjectShortName">L189gats</obj_property>
+   </wvobject>
+   <wvobject fp_name="/c880_test/L195gats" type="logic">
+      <obj_property name="ElementShortName">L195gats</obj_property>
+      <obj_property name="ObjectShortName">L195gats</obj_property>
+   </wvobject>
+   <wvobject fp_name="/c880_test/L201gats" type="logic">
+      <obj_property name="ElementShortName">L201gats</obj_property>
+      <obj_property name="ObjectShortName">L201gats</obj_property>
+   </wvobject>
+   <wvobject fp_name="/c880_test/L207gats" type="logic">
+      <obj_property name="ElementShortName">L207gats</obj_property>
+      <obj_property name="ObjectShortName">L207gats</obj_property>
+   </wvobject>
+   <wvobject fp_name="/c880_test/L210gats" type="logic">
+      <obj_property name="ElementShortName">L210gats</obj_property>
+      <obj_property name="ObjectShortName">L210gats</obj_property>
+   </wvobject>
+   <wvobject fp_name="/c880_test/L219gats" type="logic">
+      <obj_property name="ElementShortName">L219gats</obj_property>
+      <obj_property name="ObjectShortName">L219gats</obj_property>
+   </wvobject>
+   <wvobject fp_name="/c880_test/L228gats" type="logic">
+      <obj_property name="ElementShortName">L228gats</obj_property>
+      <obj_property name="ObjectShortName">L228gats</obj_property>
+   </wvobject>
+   <wvobject fp_name="/c880_test/L237gats" type="logic">
+      <obj_property name="ElementShortName">L237gats</obj_property>
+      <obj_property name="ObjectShortName">L237gats</obj_property>
+   </wvobject>
+   <wvobject fp_name="/c880_test/L246gats" type="logic">
+      <obj_property name="ElementShortName">L246gats</obj_property>
+      <obj_property name="ObjectShortName">L246gats</obj_property>
+   </wvobject>
+   <wvobject fp_name="/c880_test/L255gats" type="logic">
+      <obj_property name="ElementShortName">L255gats</obj_property>
+      <obj_property name="ObjectShortName">L255gats</obj_property>
+   </wvobject>
+   <wvobject fp_name="/c880_test/L259gats" type="logic">
+      <obj_property name="ElementShortName">L259gats</obj_property>
+      <obj_property name="ObjectShortName">L259gats</obj_property>
+   </wvobject>
+   <wvobject fp_name="/c880_test/L260gats" type="logic">
+      <obj_property name="ElementShortName">L260gats</obj_property>
+      <obj_property name="ObjectShortName">L260gats</obj_property>
+   </wvobject>
+   <wvobject fp_name="/c880_test/L261gats" type="logic">
+      <obj_property name="ElementShortName">L261gats</obj_property>
+      <obj_property name="ObjectShortName">L261gats</obj_property>
+   </wvobject>
+   <wvobject fp_name="/c880_test/L267gats" type="logic">
+      <obj_property name="ElementShortName">L267gats</obj_property>
+      <obj_property name="ObjectShortName">L267gats</obj_property>
+   </wvobject>
+   <wvobject fp_name="/c880_test/L268gats" type="logic">
+      <obj_property name="ElementShortName">L268gats</obj_property>
+      <obj_property name="ObjectShortName">L268gats</obj_property>
+   </wvobject>
+   <wvobject fp_name="/c880_test/L388gats" type="logic">
+      <obj_property name="ElementShortName">L388gats</obj_property>
+      <obj_property name="ObjectShortName">L388gats</obj_property>
+   </wvobject>
+   <wvobject fp_name="/c880_test/L389gats" type="logic">
+      <obj_property name="ElementShortName">L389gats</obj_property>
+      <obj_property name="ObjectShortName">L389gats</obj_property>
+   </wvobject>
+   <wvobject fp_name="/c880_test/L390gats" type="logic">
+      <obj_property name="ElementShortName">L390gats</obj_property>
+      <obj_property name="ObjectShortName">L390gats</obj_property>
+   </wvobject>
+   <wvobject fp_name="/c880_test/L391gats" type="logic">
+      <obj_property name="ElementShortName">L391gats</obj_property>
+      <obj_property name="ObjectShortName">L391gats</obj_property>
+   </wvobject>
+   <wvobject fp_name="/c880_test/L418gats" type="logic">
+      <obj_property name="ElementShortName">L418gats</obj_property>
+      <obj_property name="ObjectShortName">L418gats</obj_property>
+   </wvobject>
+   <wvobject fp_name="/c880_test/L419gats" type="logic">
+      <obj_property name="ElementShortName">L419gats</obj_property>
+      <obj_property name="ObjectShortName">L419gats</obj_property>
+   </wvobject>
+   <wvobject fp_name="/c880_test/L420gats" type="logic">
+      <obj_property name="ElementShortName">L420gats</obj_property>
+      <obj_property name="ObjectShortName">L420gats</obj_property>
+   </wvobject>
+   <wvobject fp_name="/c880_test/L421gats" type="logic">
+      <obj_property name="ElementShortName">L421gats</obj_property>
+      <obj_property name="ObjectShortName">L421gats</obj_property>
+   </wvobject>
+   <wvobject fp_name="/c880_test/L422gats" type="logic">
+      <obj_property name="ElementShortName">L422gats</obj_property>
+      <obj_property name="ObjectShortName">L422gats</obj_property>
+   </wvobject>
+   <wvobject fp_name="/c880_test/L423gats" type="logic">
+      <obj_property name="ElementShortName">L423gats</obj_property>
+      <obj_property name="ObjectShortName">L423gats</obj_property>
+   </wvobject>
+   <wvobject fp_name="/c880_test/L446gats" type="logic">
+      <obj_property name="ElementShortName">L446gats</obj_property>
+      <obj_property name="ObjectShortName">L446gats</obj_property>
+   </wvobject>
+   <wvobject fp_name="/c880_test/L447gats" type="logic">
+      <obj_property name="ElementShortName">L447gats</obj_property>
+      <obj_property name="ObjectShortName">L447gats</obj_property>
+   </wvobject>
+   <wvobject fp_name="/c880_test/L448gats" type="logic">
+      <obj_property name="ElementShortName">L448gats</obj_property>
+      <obj_property name="ObjectShortName">L448gats</obj_property>
+   </wvobject>
+   <wvobject fp_name="/c880_test/L449gats" type="logic">
+      <obj_property name="ElementShortName">L449gats</obj_property>
+      <obj_property name="ObjectShortName">L449gats</obj_property>
+   </wvobject>
+   <wvobject fp_name="/c880_test/L450gats" type="logic">
+      <obj_property name="ElementShortName">L450gats</obj_property>
+      <obj_property name="ObjectShortName">L450gats</obj_property>
+   </wvobject>
+   <wvobject fp_name="/c880_test/L767gats" type="logic">
+      <obj_property name="ElementShortName">L767gats</obj_property>
+      <obj_property name="ObjectShortName">L767gats</obj_property>
+   </wvobject>
+   <wvobject fp_name="/c880_test/L768gats" type="logic">
+      <obj_property name="ElementShortName">L768gats</obj_property>
+      <obj_property name="ObjectShortName">L768gats</obj_property>
+   </wvobject>
+   <wvobject fp_name="/c880_test/L850gats" type="logic">
+      <obj_property name="ElementShortName">L850gats</obj_property>
+      <obj_property name="ObjectShortName">L850gats</obj_property>
+   </wvobject>
+   <wvobject fp_name="/c880_test/L863gats" type="logic">
+      <obj_property name="ElementShortName">L863gats</obj_property>
+      <obj_property name="ObjectShortName">L863gats</obj_property>
+   </wvobject>
+   <wvobject fp_name="/c880_test/L864gats" type="logic">
+      <obj_property name="ElementShortName">L864gats</obj_property>
+      <obj_property name="ObjectShortName">L864gats</obj_property>
+   </wvobject>
+   <wvobject fp_name="/c880_test/L865gats" type="logic">
+      <obj_property name="ElementShortName">L865gats</obj_property>
+      <obj_property name="ObjectShortName">L865gats</obj_property>
+   </wvobject>
+   <wvobject fp_name="/c880_test/L866gats" type="logic">
+      <obj_property name="ElementShortName">L866gats</obj_property>
+      <obj_property name="ObjectShortName">L866gats</obj_property>
+   </wvobject>
+   <wvobject fp_name="/c880_test/L874gats" type="logic">
+      <obj_property name="ElementShortName">L874gats</obj_property>
+      <obj_property name="ObjectShortName">L874gats</obj_property>
+   </wvobject>
+   <wvobject fp_name="/c880_test/L878gats" type="logic">
+      <obj_property name="ElementShortName">L878gats</obj_property>
+      <obj_property name="ObjectShortName">L878gats</obj_property>
+   </wvobject>
+   <wvobject fp_name="/c880_test/L879gats" type="logic">
+      <obj_property name="ElementShortName">L879gats</obj_property>
+      <obj_property name="ObjectShortName">L879gats</obj_property>
+   </wvobject>
+   <wvobject fp_name="/c880_test/L880gats" type="logic">
+      <obj_property name="ElementShortName">L880gats</obj_property>
+      <obj_property name="ObjectShortName">L880gats</obj_property>
+   </wvobject>
+</wave_config>

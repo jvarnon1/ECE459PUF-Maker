@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Wed Apr 28 12:12:13 2021
+# Process ID: 25856
+# Current directory: C:/Users/jtvar/ECE459/Project/ECE459PUF-Maker/vivado/vivado.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source C:/Users/jtvar/ECE459/Project/ECE459PUF-Maker/vivado/vivado.sim/sim_1/behav/xsim/xsim.dir/c880_test_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/jtvar/ECE459/Project/ECE459PUF-Maker/vivado/vivado.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: C:/Users/jtvar/ECE459/Project/ECE459PUF-Maker/vivado/vivado.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/jtvar/ECE459/Project/ECE459PUF-Maker/vivado/vivado.sim/sim_1/behav/xsim/xsim.dir/c880_test_behav/webtalk/xsim_webtalk.tcl -notrace
