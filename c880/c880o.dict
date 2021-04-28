@@ -1,0 +1,49 @@
+test    1: 000010011010011000010110001111010001100110111100100000100101 00000111111000111000000000    0 faults detected
+test    2: 111100100101010110000010010011000000010010010111110011011111 00001111101000010100101100    0 faults detected
+test    3: 111101000001100110010101111100010100100110110111010011011100 00001111101000101011011111    0 faults detected
+test    4: 001000011111011011010011010011011110010010010011100110010000 00000111111000000110101110    0 faults detected
+test    5: 000000011001001010011100101000000010100110101100010000000110 00000111101000100010000001    0 faults detected
+test    6: 111011101111110001011001101001000011101011101011000000110101 00000111101110000001010000    0 faults detected
+test    7: 001111110001011001110001111110000001101010000010000000011000 00110111101000000000000000    0 faults detected
+test    8: 110110111101001011011011111111011100111111011011011101000110 00000111111100011111111111    0 faults detected
+test    9: 100100011111010100001010101101010100001010110100111101111011 00000111111000010111111111    0 faults detected
+test   10: 110000010000011010100101000011010011010000110011011010100010 00000111101000001100101011    0 faults detected
+test   11: 111111110010000110010000010001000001000100110011011010110100 11101100000000000101001001    0 faults detected
+test   12: 111011000110111011111100011100000000110110000101100111011000 00010111101000110101000100    0 faults detected
+	*******************************************************
+	*                                                     *
+	*            Welcome to HOPE (version 2.0)            *
+	*                                                     *
+	*               Dong S. Ha (ha@vt.edu)                *
+	*            Web: http://www.ee.vt.edu/ha             *
+	*  Virginia Polytechnic Institute & State University  *
+	*                                                     *
+	*******************************************************
+
+******   SUMMARY OF SIMULATION RESULTS   ******
+1. Circuit structure
+   Name of circuit                           : combinational_logic_example_"c880"
+   Number of primary inputs                  : 60
+   Number of primary outputs                 : 26
+   Number of combinational gates             : 383
+   Number of flip-flops                      : 0
+   Level of the circuit                      : 24
+
+2. Simulator input parameters
+   Simulation mode                           : file (c880/c880testo.test)
+
+3. Simulation results
+   Number of test patterns applied           : 12
+   Fault coverage                            : NaN %
+   Number of collapsed faults                : 0
+   Number of detected faults                 : 0
+   Number of undetected faults               : 0
+
+4. Memory used                               : 13090 Kbytes
+
+5. CPU time
+   Initialization                            : 16325627.083 secs
+   Fault simulation                          : 0.000 secs
+   Total                                     : 16325627.083 secs
+
+* List of undetected faults:

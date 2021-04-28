@@ -1,8 +1,30 @@
 Vivado Simulator 2020.1
 Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto eec3bf473d1145e79628081bab37794a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot c3540_sim_behav xil_defaultlib.c3540_sim xil_defaultlib.glbl -log elaborate.log 
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto eec3bf473d1145e79628081bab37794a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot c880_test_behav xil_defaultlib.c880_test xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
 Completed static elaboration
-INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module xil_defaultlib.ND4
+Compiling module xil_defaultlib.AN3
+Compiling module xil_defaultlib.ND2
+Compiling module xil_defaultlib.ND3
+Compiling module xil_defaultlib.AN2
+Compiling module xil_defaultlib.OR2
+Compiling module xil_defaultlib.IV
+Compiling module xil_defaultlib.NR2
+Compiling module xil_defaultlib.BU
+Compiling module xil_defaultlib.EO
+Compiling module xil_defaultlib.EN
+Compiling module xil_defaultlib.c880g
+Compiling architecture behavioral of entity xil_defaultlib.c880_test
+Built simulation snapshot c880_test_behav

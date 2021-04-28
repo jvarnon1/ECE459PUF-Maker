@@ -1,0 +1,38 @@
+test    1: 000010011010011000010110001111010001100110111100100000100101110100100 00000111111000111000000000    0 faults detected
+	*******************************************************
+	*                                                     *
+	*            Welcome to HOPE (version 2.0)            *
+	*                                                     *
+	*               Dong S. Ha (ha@vt.edu)                *
+	*            Web: http://www.ee.vt.edu/ha             *
+	*  Virginia Polytechnic Institute & State University  *
+	*                                                     *
+	*******************************************************
+
+******   SUMMARY OF SIMULATION RESULTS   ******
+1. Circuit structure
+   Name of circuit                           : combinational_logic_example_"c880"
+   Number of primary inputs                  : 69
+   Number of primary outputs                 : 26
+   Number of combinational gates             : 394
+   Number of flip-flops                      : 0
+   Level of the circuit                      : 28
+
+2. Simulator input parameters
+   Simulation mode                           : file (c880/c880.test)
+
+3. Simulation results
+   Number of test patterns applied           : 1
+   Fault coverage                            : NaN %
+   Number of collapsed faults                : 0
+   Number of detected faults                 : 0
+   Number of undetected faults               : 0
+
+4. Memory used                               : 14405 Kbytes
+
+5. CPU time
+   Initialization                            : 16383816.917 secs
+   Fault simulation                          : 0.000 secs
+   Total                                     : 16383816.917 secs
+
+* List of undetected faults:

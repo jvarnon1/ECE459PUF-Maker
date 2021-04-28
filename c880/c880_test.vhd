@@ -44,9 +44,9 @@ architecture Behavioral of c880_test is
         );
     end component;
     
-    signal input : std_logic_vector (59 downto 0) := "000010011010011000010110001111010001100110111100100000100101";
+    signal input : std_logic_vector (59 downto 0) := "000010011010011000010110001111010001100110111100100000100101"; --43454227759745061
     signal key : std_logic_vector (8 downto 0) := "110100100"; --the correct key is 420
-    signal output : std_logic_vector (25 downto 0) := "00000000000000000000000000"; --correct output is 00000111111000111000000000
+    signal output : std_logic_vector (25 downto 0) := "00000000000000000000000000"; --correct output is 00000111111000111000000000 or 2067968
     
     --signal key1, key2, key4, key7 : std_logic := '1';
     --signal key3, key5, key6, key8, key9: std_logic := '0'; 
