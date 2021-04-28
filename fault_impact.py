@@ -25,9 +25,7 @@ def get_fault_impact(file):
     name_list = []
     for l in file: #each line in the file
         line = l.split() #split up the words on the line
-        if line[0].startswith("N") | line[0].startswith("L")| #gates start with N or L
-         | line[0].startswith("G") | line[0].startswith("K") | line[0].startswith("X"): #gates start with G
-            # Get the gate's name
+        if line[0].startswith("N") | line[0].startswith("L") | line[0].startswith("G") | line[0].startswith("K") | line[0].startswith("X"):
             name = line[0]
             if name not in name_list:
                 name_list.append(name) # save name to list
